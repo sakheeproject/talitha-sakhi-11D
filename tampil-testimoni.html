@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+     
+</style>  
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Testimoni Form</title>
+ <link rel="stylesheet" href="style.css" />
+ <div class="hero-image">
+ <img src="img/ChatGPT Image Feb 2, 2026, 08_58_20 AM.png" alt="img" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 15px;"></div>
+</head>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<body>
+<nav> <a href="index.html"><strong>Titik Mula</strong></a>
+  <a href="produk.html"><strong>KATA log</strong></a>
+  <a href="bedah-buku.html"><strong>Bedah buku</strong></a>
+  <a href="testimoni.html"><strong>Testimoni</strong></a>
+  <a href="tampil-testimoni.html"><strong>Testimoni Pembeli</strong></a>
+
+</nav>
+<main class="formulir">
+    <h2>Testimoni-testimoni pembeli :</h2>
+    <div id="daftarTestimoni" class="testimoni-grid"></div>
+
+    <div class="btn-kembali"><button id="hapusSemua">Clear All</button></div>
+    <section>
+        <div id="daftarTestimoni"></div>
+    </section>
+    
+</main>
+<footer>
+    <p>&copy; 2026 Ruang Baca</p>
+
+</footer>
+<script>
+    const container = document.getElementById('daftarTestimoni');
+    const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
+    if(testimoniList.length ===0) {
+        container.innerHTML="<p> Belum ada testimoni :( </p>";
+    
+    }else{
+        
+        testimoniList.forEach((t,i) => {
+            const el=document.createElement('div');
+            el.className='testimoni-box';
+            el.innerHTML=`
+            <p><strong>Nama:</strong>${t.nama}</p>
+            <p><strong>Asal:</strong>${t.asal}</p>
+            <p><strong>Email:</strong>${t.email}</p>
+            <p><strong>Judul:</strong>${t.judul}</p>
+            <p><strong>Pesan:</strong>${t.pesan}</p>
+            <p><strong>Rating:</strong>${t.rating}</p>`;
+            container.appendChild(el);
+        });
+    }
+document.getElementById("hapusSemua").addEventListener("click",function() {
+    const konfirmasi= confirm("Yakin hapus semua testimoni?");
+    if(konfirmasi) {
+        localStorage.removeItem("testimoniList");
+        location.reload();
+        }
+
+});
+
+
+</script>
+
+</body>
+</html>

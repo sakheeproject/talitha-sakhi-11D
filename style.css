@@ -1,0 +1,281 @@
+body {
+    background-color: #d4fbff;
+    font-family: 'Poppins', sans-serif;
+}
+.section {
+  background-color: #54ACBF;
+  animation: ilang 1s ease-out;
+}
+h1 {
+    color: #023859;
+    text-align: center;
+    animation: ilang 1s ease-out;
+    margin-top: 50px;       /* Memberi jarak dari menu navigasi */
+    margin-bottom: 20px;
+    
+}
+h2 {
+    color: #023859;
+    text-align:center;
+    animation: ilang 1s ease-out;
+}
+p {
+    color: #011C40;
+    animation: ilang 1s ease-out;
+}
+nav a {
+    color: #023859;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ddfbff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    display: inline-block;
+    align-items: center;
+    margin-top: 15px;
+}
+nav a:hover {
+    background-color: #54abbfa8;
+    border-radius: 35px;
+    transform: scale(1.09);
+}
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.Produk {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: ilang 1s ease-out;
+    display: flex;
+    flex-wrap: wrap;       /* Agar kalau tidak muat, dia pindah ke bawah sendiri */
+    justify-content: center; /* Mengetengahkan semua produk */
+    gap: 30px;             /* Memberi jarak yang lega antar buku */
+    padding: 20px;
+    align-items: flex-start;
+}
+.Produk img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    animation: ilang 1s ease-out;
+}
+.Produk h2 {
+    font-size: 20px;
+    color: #023859;
+    text-align: center;
+    animation: ilang 1s ease-out;
+    
+    
+}
+.Produk h3 {
+    font-size: 16px;
+    color: #023859;
+    animation: ilang 1s ease-out;
+    
+}
+.Harga {
+    font-weight: bold;
+    color: #023859;
+    animation: ilang 1s ease-out;
+}
+.Deskripsi {
+    font-size: 14px;
+    color: #023859;
+    animation: ilang 1s ease-out;
+}
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color:#fdfdfd;
+    font-family: 'poppins', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    animation: ilang 1s ease-out;
+
+}
+.artikel .penulis {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    animation: ilang 1s ease-out;
+}
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    animation: ilang 1s ease-out;
+}
+.artikel blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #999;
+    color: #444;
+    background-color: #f9f9f9;
+    animation: ilang 1s ease-out;
+}
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background-color: #74b5c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: ilang 1s ease-out;
+
+}
+.btn-kembali:hover {
+    background-color: #666;
+}
+@keyframes ilang {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ul {
+    animation: ilang 1s ease-out;
+}
+.formulir {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #c9f0f45d;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    animation: ilang 1s ease-out;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    animation: ilang 1s ease-out;
+
+}
+form input,
+form select,
+form textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    animation: ilang 1s ease-out;
+}
+form button {
+    background-color:#74b5c0 ;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: ilang 1s ease-out;
+}
+form button:hover {
+    background-color: #738b8e;
+}
+.kategori-buku {
+    max-width:fit-content;
+    margin: auto;
+    padding: 20px;
+    background-color:#fdfdfd;
+    font-family: 'poppins', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    animation: ilang 1s ease-out;
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-family: 'poppins';
+    font-size: 14px;
+}
+.hero-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto; /* Mengetengahkan teks */
+    line-height: 1.8;
+}
+details {
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+summary::before {
+    font-weight: bold;
+    color: #023859; /* Warna biru navy konsisten */
+    list-style: none; /* Menghilangkan segitiga standar browser */
+    outline: none;
+    background-color: #74b5c05d; /* Warna tombol kembali */;
+    border-radius: 10px;
+    content: "Singkap Makna";
+}
+details[open] summary::before {
+    content: "Tutup Makna"; /* Pakai BEFORE agar menimpa teks sebelumnya */
+    background-color: #023859; /* Ubah warna saat terbuka agar beda */
+    color: white;
+
+}
+/* Ganti .kotak-testimoni menjadi .testimoni-box */
+.testimoni-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #023859; /* Aksen biru navy */
+    margin-bottom: 20px;
+}
+
+/* Ganti juga label anaknya */
+.testimoni-box p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.testimoni-box strong {
+    color: #023859; /* Memberi warna biru pada label Nama, Asal, dll */
+}
+/* Ini untuk mengatur tempat (ID) di mana testimoni dimunculkan */
+#daftarTestimoni {
+    display: flex;
+    flex-wrap: wrap; /* Agar kalau penuh, kotaknya pindah ke baris baru */
+    gap: 20px;       /* Jarak antar kotak */
+    justify-content: center; /* Kotak berada di tengah halaman */
+    padding: 30px;
+    align-items: flex-start;
+}
