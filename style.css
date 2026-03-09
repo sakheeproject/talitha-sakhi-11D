@@ -282,3 +282,50 @@ details[open] summary::before {
     align-items: flex-start;
 
 }
+/* Container Utama */
+.container-kontak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    align-items: flex-start;
+}
+
+/* Kotak Info & Form */
+.info-toko, .form-kontak {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #023859; /* Aksen biru navy konsisten */
+}
+
+/* Gaya Input Form */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+/* Tombol Kirim dengan Efek Glowing */
+.btn-kirim {
+    background-color: #023859;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-kirim:hover {
+    box-shadow: 0 0 15px #74b5c0; /* Efek glowing sesuai navigasi */
+    transform: translateY(-2px);
+}
