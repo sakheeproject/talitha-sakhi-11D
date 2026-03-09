@@ -329,3 +329,78 @@ input, textarea {
     box-shadow: 0 0 15px #74b5c0; /* Efek glowing sesuai navigasi */
     transform: translateY(-2px);
 }
+/* Layout Utama */
+.container-event {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Kartu Event */
+.event-card {
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #74b5c0; /* Efek glow sesuai nav */
+}
+
+/* Badge (Label Pojok) */
+.badge-diskon, .badge-event {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+.badge-diskon { background: #e74c3c; } /* Merah untuk diskon */
+.badge-event { background: #023859; }  /* Biru navy untuk event */
+
+/* Informasi Text */
+.event-info {
+    padding: 20px;
+}
+
+.event-info h3 {
+    color: #023859;
+    margin-bottom: 10px;
+}
+
+.tanggal {
+    color: #74b5c0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Tombol di dalam Event */
+.btn-event {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #023859;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-event:hover {
+    background: #74b5c0;
+    box-shadow: 0 0 10px #74b5c0;
+}
