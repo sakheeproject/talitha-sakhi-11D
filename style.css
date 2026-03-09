@@ -53,22 +53,19 @@ minmax(250px, 1fr));
     padding: 20px;
 }
 .Produk {
-    background-color: #fff;
+background-color: #fff;
+    border: 1px solid #ddd;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     animation: ilang 1s ease-out;
     display: flex;
     flex-wrap: wrap;       /* Agar kalau tidak muat, dia pindah ke bawah sendiri */
     justify-content: center; /* Mengetengahkan semua produk */
     gap: 30px;             /* Memberi jarak yang lega antar buku */
     padding: 20px;
-    align-items: flex-start;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #eee;
+    align-items: flex-start; 
 }
 .Produk:hover {
     transform: translateY(-10px);
@@ -411,6 +408,7 @@ input, textarea {
     background: #74b5c0;
     box-shadow: 0 0 10px #74b5c0;
 }
+
 
 
 
